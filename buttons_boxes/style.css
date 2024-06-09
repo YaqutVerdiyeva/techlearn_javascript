@@ -1,0 +1,55 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+li {
+  list-style: none;
+  margin: 15px 0;
+  position: relative;
+}
+.btn-first {
+  background-color: rgb(54, 214, 54);
+}
+.btn-second {
+  background-color: rgb(165, 91, 42);
+}
+.btn-third {
+  background-color: brown;
+}
+.box {
+  border-right: 5px solid #000;
+  padding: 0 20px;
+}
+.box:last-child {
+  border: none;
+}
+button {
+  border: none;
+  height: 70px;
+  width: 150px;
+  color: #fff;
+  font-size: 20px;
+  box-shadow: 5px 5px 10px rgb(190, 184, 184);
+}
+
+li div {
+  background-color: rgb(148, 79, 148);
+  pointer-events: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  position: absolute;
+  width: 150px;
+  bottom: 0px;
+  overflow: hidden;
+  transition: all 1s;
+  font-size: 20px;
+}
+
+button:hover + div {
+  height: 70px;
+}

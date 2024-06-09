@@ -1,0 +1,11 @@
+p {
+  background-image: url("./thomas-vimare-IZ01rjX0XQA-unsplash.jpg");
+  background-size: 0;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  padding: 5px;
+  transition: all 1s;
+}
+p:hover {
+  background-size: 100%;
+}
