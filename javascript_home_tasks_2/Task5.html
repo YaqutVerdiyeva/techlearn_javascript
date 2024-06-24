@@ -7,11 +7,16 @@
   </head>
   <body>
     <script>
-      let array = [];
-      for (let i = 110; i >= 10; i--) {
-        array.unshift(i);
+      let obj = {
+        name: "David",
+        surname: "Doe ",
+        age: 31,
+        email: "daviddoe@gmail.com",
+      };
+      for (let i in obj) {
+        console.log("key:", i);
+        console.log("value:", obj[i]);
       }
-      console.log(array);
     </script>
   </body>
 </html>
